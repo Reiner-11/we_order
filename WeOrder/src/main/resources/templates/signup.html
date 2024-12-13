@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="flex flex-col items-center px-3 w-full">
+
+    <div class="mb-4">
+        <img src="/images/logo.png" alt="WeDeliver Logo" class="h-24 w-24">
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-96">
+        <form>
+            <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">Sign up</h2>
+
+            <label for="email" class="sr-only">Email</label>
+            <input
+                    type="email"
+                    placeholder="Email"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-400 focus:outline-none mb-4"
+                    id="email"
+                    required
+            >
+
+            <label for="username" class="sr-only">Username</label>
+            <input
+                    type="text"
+                    placeholder="Username"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-400 focus:outline-none mb-4"
+                    id="username"
+                    required
+            >
+
+            <label for="password" class="sr-only">Password</label>
+            <input
+                    type="password"
+                    placeholder="Password"
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-yellow-400 focus:outline-none mb-4"
+                    id="password"
+                    required
+            >
+
+            <div class="mb-4">
+                <button
+                        type="submit"
+                        class="w-full bg-yellow-400 text-white p-3 rounded-lg font-semibold hover:bg-yellow-500 focus:outline-none focus:ring focus:ring-yellow-400"
+                >
+                    Signup
+                </button>
+            </div>
+
+            <p class="text-center text-sm text-gray-500">
+                Already have an Account?
+                <a href="#" class="text-yellow-500 font-semibold hover:underline">Login</a>
+            </p>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
